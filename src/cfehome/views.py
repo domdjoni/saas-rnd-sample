@@ -15,6 +15,6 @@ def home_page_view(request, *args, **kwargs):
         'queryset' : queryset.count()
     }
 
-    home_html = "home.html"
+    home_html = "base.html"
     Visits.objects.create()
     return render(request, home_html, my_context)
